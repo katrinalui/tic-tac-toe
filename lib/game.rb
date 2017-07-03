@@ -17,6 +17,7 @@ class Game
 
   def play
     play_turn until board.over?
+    player_one.display(board)
     puts "Game over! The winner is #{board.winner}."
   end
 
